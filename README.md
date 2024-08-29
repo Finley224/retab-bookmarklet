@@ -7,6 +7,7 @@ Retab is a free and easy tool to rename your tabs with a bookmark, to get starte
 - New bookmark version notifications
 - No extension install required
 - No ads or tracking, uses Github as a CDN
-### Todo list
+### TODO list
 - [ ] Drag and drop install
 - [ ] Offline version for computers with restricted internet access
+- [ ] Test on major browsers
