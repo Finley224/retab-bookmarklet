@@ -10,4 +10,4 @@ Retab is a free and easy tool to rename your tabs with a bookmark, to get starte
 ### TODO list
 - [ ] Drag and drop install
 - [ ] Offline version for computers with restricted internet access
-- [ ] Test on major browsers
+- [x] Test on major browsers
