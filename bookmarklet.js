@@ -14,7 +14,7 @@ javascript: (() => {
     }
 
     /* Check for updates */
-    version = "0.2.1"
+    version = "0.2.2"
     channel = "mainChannelVersion"
     fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/version.json", { method: "GET" }).then((response) => response.json()).then(
         (json) => { if (json[channel] != version) 
@@ -26,5 +26,5 @@ javascript: (() => {
     console.log(serverVersion);
 
     /* Run the script from github */
-    fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/settabname.js", { method: "GET" }).then((response) => response.text()).then((text) => eval(text));
+    fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/settabname.js", { method: "GET" }).then((response) => response.text()).then((text) => window.eval(text));
 })();
