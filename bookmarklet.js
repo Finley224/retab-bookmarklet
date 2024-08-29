@@ -14,8 +14,9 @@ javascript: (() => {
     }
 
     /* Check for updates */
-    version = "0.2.2"
-    channel = "mainChannelVersion"
+    serverVersion = "null";
+    version = "0.2.3";
+    channel = "mainChannelVersion";
     fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/version.json", { method: "GET" }).then((response) => response.json()).then(
         (json) => { if (json[channel] != version) 
             {
