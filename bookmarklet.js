@@ -3,7 +3,7 @@ javascript: (() => {
     if (!document.getElementById('titleprotect')) {
         script = document.createElement('script');
         script.setAttribute('id', "titleprotect");
-        /* grab the scirpt and set innerHTML to it, this is needed as CORS prevents using the src tag */
+        /* grab the script and set innerHTML to it, this is needed as CORS prevents using the src tag */
         fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/protecttitle.js", { method: "GET" }).then(
             (response) => response.text()
         ).then(
@@ -14,12 +14,12 @@ javascript: (() => {
     }
 
     /* Check for updates */
-    version = "0.2"
+    version = "0.2.1"
     channel = "mainChannelVersion"
     fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/version.json", { method: "GET" }).then((response) => response.json()).then(
         (json) => { if (json[channel] != version) 
             {
-                alert("Bookmark is out of date, vist https://github.com/Finley224/retab-bookmarklet to get the latest version. Current channel is " + channel + ". Current Version is " + version + ".");
+                alert("Bookmark is out of date, visit https://github.com/Finley224/retab-bookmarklet to get the latest version. Current channel is " + channel + ". Current Version is " + version + ".");
             } 
         }
     );

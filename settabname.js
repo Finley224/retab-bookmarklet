@@ -11,7 +11,7 @@ if (typeof window.sessionStorage.tabName != "undefined" ) {
     newTitle = prompt("Enter Tab Title:");
 }
 
-/* Save the title to sesion storage */
+/* Save the title to session storage */
 window.sessionStorage.tabName = newTitle;
 
 /* Update the title */
