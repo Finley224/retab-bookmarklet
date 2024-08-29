@@ -1,5 +1,7 @@
 # Retab
 Retab is a free and easy tool to rename your tabs with a bookmark, to get started, make a new bookmark with the url set to the code located [here](bookmarklet.js).
+### Browser support
+Retab supports Firefox and Google Chrome. It should work with any browser based on Chromium or Firefox.
 ### Features
 - Saves tab names after refresh (The bookmarklet must be re-run to update the tab name)
 - Protects against sites changing the tab name
