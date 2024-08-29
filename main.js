@@ -15,7 +15,7 @@ if (!document.getElementById('titleprotect')) {
 /* Check if the tab name is saved, if it is saved, offer the user to set it, if not, have the user enter a new */
 if (typeof window.sessionStorage.tabName != "undefined" ) {
     sessionTitle = window.sessionStorage.tabName;
-    if (confirm(`Would you like to set the title to "${sessionTitle}"? \nCanceling will allow you to put in another name`)) {
+    if (confirm(`Would you like to set the title to "${sessionTitle}"? \nPress cancel to set a custom tab name`)) {
         newTitle = sessionTitle;
     } else {
         newTitle = prompt("Enter Tab Title:");
