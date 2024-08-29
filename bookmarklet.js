@@ -1,31 +1,19 @@
 javascript: (() => {
-    /* Insert the title protect script if it does not exist */
-    if (!document.getElementById('titleprotect')) {
-        script = document.createElement('script');
-        script.setAttribute('id', "titleprotect");
-        /* grab the script and set innerHTML to it, this is needed as CORS prevents using the src tag */
-        fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/protecttitle.js", { method: "GET" }).then(
-            (response) => response.text()
-        ).then(
-            (text) => script.innerHTML = text
-        );
-        /* Append the script to the body of the HTML Doc */
-        document.head.appendChild(script);
-    }
-
     /* Check for updates */
+    updateCheck = true;
     serverVersion = "null";
-    version = "0.2.3";
+    version = "0.3";
     channel = "mainChannelVersion";
+    if (updateCheck) {
     fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/version.json", { method: "GET" }).then((response) => response.json()).then(
         (json) => { if (json[channel] != version) 
             {
-                alert("Bookmark is out of date, visit https://github.com/Finley224/retab-bookmarklet to get the latest version. Current channel is " + channel + ". Current Version is " + version + ".");
+                alert("Bookmark is out of date, visit https://github.com/Finley224/retab-bookmarklet to get the latest version. Current channel is " + channel + ". Current Version is " + version + ". Server version is " + serverVersion + ".");
             } 
         }
     );
-    console.log(serverVersion);
+    }
 
     /* Run the script from github */
-    fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/settabname.js", { method: "GET" }).then((response) => response.text()).then((text) => window.eval(text));
+    fetch("https://raw.githubusercontent.com/Finley224/retab-bookmarklet/main/main.js", { method: "GET" }).then((response) => response.text()).then((text) => window.eval(text));
 })();
