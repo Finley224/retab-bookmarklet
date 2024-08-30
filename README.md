@@ -7,8 +7,7 @@ To get started, make a new bookmark with the url set to the code located [here](
 ### Features
 - Saves tab names after refresh (The bookmarklet must be re-run to update the tab name)
 - Protects against sites changing the tab name
-- Automatic feature updates (The loader script may get updates, which can't auto install)
-- New bookmark version notifications
+- Automatic updates
 - No extension install required
 - No ads or tracking, uses Github as a CDN
 ### To-Do list
