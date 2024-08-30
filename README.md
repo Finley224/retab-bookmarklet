@@ -11,7 +11,7 @@ To get started, make a new bookmark with the url set to the code located [here](
 - New bookmark version notifications
 - No extension install required
 - No ads or tracking, uses Github as a CDN
-### TODO list
+### To-Do list
 - [ ] Drag and drop install
 - [ ] Offline version for computers with restricted internet access
 - [x] Test on major browsers
