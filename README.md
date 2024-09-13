@@ -11,6 +11,6 @@ To get started, make a new bookmark with the url set to the code located [here](
 - No extension install required
 - No ads or tracking, uses Github as a CDN
 ### To-Do list
-- [ ] Drag and drop install
-- [ ] Offline version for computers with restricted internet access
+- [x] Drag and drop install
+- [x] Offline version for computers with restricted internet access
 - [x] Test on major browsers
