@@ -3,7 +3,7 @@
 ### Browser support
 Retab supports Firefox and Google Chrome. It should work with any browser based on Chromium or Firefox.
 ### Install
-To get started, make a new bookmark with the url set to the code located [here](bookmarklet.js). A drag and drop installer is coming soon.
+To get started, vist the [Retab Website](https://finley224.github.io/Retab-Website/) and press add to browser.
 ### Features
 - Saves tab names after refresh (The bookmarklet must be re-run to update the tab name)
 - Protects against sites changing the tab name
